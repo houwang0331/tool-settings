@@ -1,0 +1,6 @@
+theme=chalk
+cursor-style = block
+shell-integration-features = no-cursor
+cursor-style-blink = false
+font-size = 18
+copy-on-select = clipboard

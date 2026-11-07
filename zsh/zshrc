@@ -1,0 +1,22 @@
+# "simple" theme
+autoload -Uz vcs_info
+setopt prompt_subst
+
+zstyle ':vcs_info:git:*' formats ' git:(%b)'
+precmd() { vcs_info }
+PROMPT='%B%F{green}%n%f%b:%B%F{blue}%~%f%b${vcs_info_msg_0_} %# '
+
+# Enable colors for file listings
+export CLICOLOR=1
+
+# Show directories in blue
+export LSCOLORS=exfxcxdxbxegedabagacad
+
+source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
+# Alias
+alias n='nvim '
+
+# Machine-specific / private settings (not in the repo)
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
