@@ -29,4 +29,4 @@ This repo is **public on GitHub**.
 
 # Status
 - Done (symlinked): zsh (`zshrc`, `zprofile`), ghostty, git, neo-vim
-- To do: raycast-scripts
+- Done (no symlink): raycast-scripts — Raycast loads the scripts directly from this repo folder

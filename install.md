@@ -62,3 +62,7 @@ Config folder: `neo-vim/` → `~/.config/nvim`
 mkdir -p ~/.config
 ln -s "$REPO/neo-vim" ~/.config/nvim
 ```
+
+## Raycast scripts
+No symlink needed: Raycast reads the scripts straight from this repo.
+Raycast → Settings → Extensions → **+** → Add Script Directory → choose `$REPO/raycast-scripts`.
